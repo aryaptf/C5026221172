@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,500;9..40,600;9..40,700&family=Inter:wght@300;500;600;700&display=swap');
+
+body {
+    text-align: center;
+    justify-content: center;
+    font-family: DM Sans;
+    min-height: 100dvh;
+    background: linear-gradient(0deg, rgb(230, 209, 152), rgb(255, 221, 206));
+}
+
+.arput-navbar {
+    padding-top: 20px;
+    margin-left: 72.7%;
+}
+
+.arput-menu {
+    background-color: #f0f0f0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: fixed;
+  }
+  
+.arput-menu .more-horizontal {
+    padding-top: 10px;
+    margin: auto;
+    width: 20px;
+    height: 20px;
+    display: block;
+  }
+  
+.arput-menu:hover {
+    background-color: rgb(231, 231, 231);
+    cursor: pointer;
+  }
+
+.arput-profile-image {
+    border-radius: 50%;
+    width: 96px;
+    height: 96px;
+    margin-top: 40px;
+}
+
+.arput-profile-title {
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 4px;
+}
+
+.arput-bio {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.arput-content {
+    font-weight: 700;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    line-height: 1.5;
+}
+
+.arput-sub-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arput-button {
+    border: 2px solid rgb(72, 94, 104);
+    background-color: rgb(72, 94, 104);
+    box-shadow: rgba(150, 75, 0, 0.24) 0px 2px 8px 0px;
+    height: 56px;
+    width: 680px;
+    border-radius: 30px;
+    color: rgb(233, 237, 237);
+    text-decoration: none;
+}
+
+.arput-button:hover {
+    transform: scale(1.01);
+    transition: all 200ms;
+}
+
+.arput-button:hover:after {
+    content: '...'; 
+    position: absolute;
+    top: 50%;
+    right: 20px; 
+    transform: translateY(-80%);
+    font-size: 24px;
+    font-weight:lighter;
+    color: white;
+}
+
+.arput-linktree-logo {
+    height: 52px;
+    margin-top: 20px;
+}
+
+.arput-text {
+    font-size: 16px;
+    margin-top: 17px;
+}
+
+.arput-margin-part {
+    margin-bottom: 1rem;
+}
+
+.arput-margin-content {
+    margin-top: 2rem;
+}
+
+.arput-margin-sub-content {
+    margin-bottom: 14px;
+}
+

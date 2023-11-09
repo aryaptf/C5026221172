@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,500;9..40,600;9..40,700&family=Inclusive+Sans&family=Inconsolata:wght@400;500;600;700&family=Inter:wght@300;500;600;700&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Roboto:ital,wght@0,300;0,500;0,700;1,400&display=swap');
+
+body{
+    background-color: #F5F5F5;
+    background-image: url(Polygon2.png);
+    background-repeat: no-repeat;
+    background-size: 55% 105%;
+    background-position-y: 80%;
+    font-family: nunito;
+    color: #4F4F4F;
+}
+
+.image-arput {
+    height: 720px;
+}
+
+
+.logo-arput {
+    margin-top: 2rem;
+    height: 54px;
+}
+
+.position-logo-arput {
+    justify-content: right;
+    padding-right: 168px;
+}
+
+.heading-arput {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-weight: 800;
+    font-size: 64px;
+}
+
+.point-arput {
+    margin-top: 2rem;
+}
+
+.bintang-arput {
+    height: 64px;
+    
+}
+
+.heading-point-arput {
+    font-size: 40px;
+    font-weight: 700;
+    margin-left: 2rem;
+}
+
+.content-point-arput {
+    font-size: 40px;
+    font-weight: 400;
+    margin-left: 6rem;
+    padding-right: 72px;
+}
