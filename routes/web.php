@@ -93,3 +93,26 @@ Route::get('/pegawai/hapus/{id}','App\Http\Controllers\PegawaiController@hapus')
 
 Route::get('/pegawai/cari','App\Http\Controllers\PegawaiController@cari');
 Route::get('/pegawai/view/{id}','App\Http\Controllers\PegawaiController@view');
+
+
+//nilaikuliah
+Route::get('/nilaikuliah','App\Http\Controllers\NilaikuliahController@indexnilai');
+Route::get('/nilaikuliah/tambahnilai','App\Http\Controllers\NilaikuliahController@tambahnilai');
+Route::post('/nilaikuliah/store','App\Http\Controllers\NilaikuliahController@store');
+
+//keranjangbelanja
+Route::get('/keranjangbelanja','App\Http\Controllers\KeranjangController@index');
+Route::get('/keranjangbelanja/beli','App\Http\Controllers\KeranjangController@beli');
+Route::post('/keranjangbelanja/store','App\Http\Controllers\KeranjangController@store');
+Route::get('/keranjangbelanja/hapus/{id}','App\Http\Controllers\KeranjangController@hapus');
+
+//televisi
+Route::get('/televisi','App\Http\Controllers\TelevisiController@indextelevisi');
+Route::get('/televisi/tambahtelevisi','App\Http\Controllers\TelevisiController@tambahtelevisi');
+Route::post('/televisi/store','App\Http\Controllers\TelevisiController@store');
+Route::get('/televisi/edittelevisi/{id}','App\Http\Controllers\TelevisiController@edittelevisi');
+Route::post('/televisi/update','App\Http\Controllers\TelevisiController@update');
+Route::get('/televisi/hapustelevisi/{id}','App\Http\Controllers\TelevisiController@hapustelevisi');
+
+Route::get('/televisi/cari','App\Http\Controllers\TelevisiController@cari');
+Route::get('/televisi/viewtelevisi/{id}','App\Http\Controllers\TelevisiController@viewtelevisi');
