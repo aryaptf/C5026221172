@@ -14,11 +14,7 @@
 	<form action="/televisi/update" method="post" class="form-horizontal">
 		{{ csrf_field() }}
         <div class="form-group row">
-            <label for="kodetelevisi" class="col-xl-2 col-form-label mr-2">Kode Televisi</label>
-            <input type="hidden" name="id" value="{{ $t->kodetelevisi }}">
-            <div class="col-sm-9">
-                <input type="number" required="required" class="form-control" id="kodetelevisi" name="kodetelevisi" value="{{ $t->kodetelevisi }}">
-            </div>
+            <input type="hidden" name="kodetelevisi" value="{{ $t->kodetelevisi }}">
         </div>
         <div class="form-group row">
             <label for="merktelevisi" class="col-xl-2 col-form-label mr-2">Merk Televisi</label>

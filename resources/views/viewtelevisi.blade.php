@@ -18,7 +18,7 @@
             <fieldset disabled>
                 <form action="/televisi/update" method="post" class="form-horizontal " role="form">
                     {{ csrf_field() }}
-                    <input type="hidden" name="id" value="{{ $t->kodetelevisi }}">
+                    <input type="hidden" name="kodetelevisi" value="{{ $t->kodetelevisi }}">
                     <div class = "form-group row">
                         <label for = "kodetelevisi" class = "col-sm-3 control-label">Kode Televisi</label>
                         <div class = "col-sm-9">

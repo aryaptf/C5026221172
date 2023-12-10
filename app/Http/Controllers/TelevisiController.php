@@ -66,7 +66,7 @@ class TelevisiController extends Controller
             $tersedia='N';
         }
 		// update data pegawai
-		DB::table('televisi')->where('kodetelevisi',$request->id)->update([
+		DB::table('televisi')->where('kodetelevisi',$request->kodetelevisi)->update([
 			'kodetelevisi' => $request->kodetelevisi,
 			'merktelevisi' => $request->merktelevisi,
 			'stocktelevisi' => $request->stocktelevisi,
