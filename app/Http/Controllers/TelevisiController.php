@@ -31,16 +31,16 @@ class TelevisiController extends Controller
 	public function store(Request $request)
 	{
         if($request->stocktelevisi > 0) {
-            $tersedia='Y';
+            $request->tersedia='Y';
         }else {
-            $tersedia='N';
+            $request->tersedia='N';
         }
 		// insert data ke table pegawai
 		DB::table('televisi')->insert([
 			'kodetelevisi' => $request->kodetelevisi,
 			'merktelevisi' => $request->merktelevisi,
 			'stocktelevisi' => $request->stocktelevisi,
-			'tersedia' => $tersedia
+			'tersedia' => $request->tersedia
 		]);
 		// alihkan halaman ke halaman pegawai
 		return redirect('/televisi');
@@ -61,16 +61,16 @@ class TelevisiController extends Controller
 	public function update(Request $request)
 	{
         if($request->stocktelevisi > 0) {
-            $tersedia='Y';
+            $request->tersedia='Y';
         }else {
-            $tersedia='N';
+            $request->tersedia='N';
         }
 		// update data pegawai
 		DB::table('televisi')->where('kodetelevisi',$request->kodetelevisi)->update([
 			'kodetelevisi' => $request->kodetelevisi,
 			'merktelevisi' => $request->merktelevisi,
 			'stocktelevisi' => $request->stocktelevisi,
-			'tersedia' => $tersedia
+			'tersedia' => $request->tersedia
 		]);
 		// alihkan halaman ke halaman pegawai
 		return redirect('/televisi');

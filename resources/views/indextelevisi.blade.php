@@ -29,7 +29,7 @@
 			<td>{{ $t->kodetelevisi }}</td>
 			<td>{{ $t->merktelevisi }}</td>
 			<td>{{ $t->stocktelevisi }}</td>
-			<td>{{ $t->tersedia }}</td>
+			<td><input type="checkbox" {{ $t->tersedia == 'Y' ? 'checked' : '' }} disabled></td>
             <td class="col-md-3">
                 <a href="/televisi/viewtelevisi/{{ $t->kodetelevisi }}" class="btn btn-success">View</a>
 				|
