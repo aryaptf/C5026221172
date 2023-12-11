@@ -12,7 +12,7 @@
 
 	<table class="table table-striped table-hover">
 		<tr class="text-center">
-			<th>ID</th>
+			<th>ID</th> {{-- judul kolom --}}
 			<th>NRP</th>
 			<th>Nilai Angka</th>
 			<th>SKS</th>
@@ -21,7 +21,7 @@
 		</tr>
 		@foreach($nilaikuliah as $n)
 		<tr class="text-center">
-			<td>{{ $n->ID }}</td>
+			<td>{{ $n->ID }}</td> {{-- ID ini adalah nama tabel di database --}}
 			<td>{{ $n->NRP }}</td>
 			<td>{{ $n->NilaiAngka }}</td>
 			<td>{{ $n->SKS }}</td>

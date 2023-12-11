@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\KategoriController;
 
 /*
 |--------------------------------------------------------------------------
@@ -116,3 +117,7 @@ Route::get('/televisi/hapustelevisi/{id}','App\Http\Controllers\TelevisiControll
 
 Route::get('/televisi/cari','App\Http\Controllers\TelevisiController@cari');
 Route::get('/televisi/viewtelevisi/{id}','App\Http\Controllers\TelevisiController@viewtelevisi');
+
+//kategori
+Route::get('/kategori','App\Http\Controllers\KategoriController@index');
+Route::post('/kategori/hasil', 'App\Http\Controllers\KategoriController@hasil');
